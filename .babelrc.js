@@ -1,5 +1,6 @@
 // Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
 
 module.exports = {
-  presets: ['@babel/preset-env'],
+    // See https://babeljs.io/docs/en/babel-preset-env#targets
+    presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
 };
